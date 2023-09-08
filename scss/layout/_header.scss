@@ -1,0 +1,29 @@
+.main-img {
+  background-image: url(../img/pexels-beckett-johnson-5022312.jpg);
+  background-size: cover;
+  filter: grayscale(1);
+  width: 100%;
+  height: 100vh;
+}
+
+.img-content {
+  @include text(2.5em, $white);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+
+  & p {
+    font-size: 1.5rem;
+  }
+}
+
+.scroll-down {
+  @include text(2rem, $black);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 8px;
+}

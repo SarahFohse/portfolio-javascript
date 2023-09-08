@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+ margin: 0;
+ font-size: 16px;
+}
+body {
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  font-family: $stack-oswald;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+.back-top {
+  text-align: center;
+  margin: 25px 0;
+
+  a {
+    @include text(1.2em, $black);
+    text-decoration: none;
+  }
+}

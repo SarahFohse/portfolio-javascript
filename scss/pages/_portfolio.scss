@@ -1,0 +1,40 @@
+// Portfolio Page page numbers don't have a functionality yet
+#pages {
+  margin-left: 50px;
+}
+
+.pagination {
+  list-style-type: none;
+
+  li {
+      display: inline-block;
+      margin-right: 12px;
+  }
+
+  li:hover {
+      cursor: pointer;
+      font-weight: 600;
+      color: #777;
+  }
+
+  .active {
+      font-weight: 600;
+      text-decoration: underline;
+  }
+}
+.projects {
+  top: 0;
+  position: relative;
+  transition: .5s all ease;
+  display: none;
+
+  &.active {
+    display: block;
+  }
+  &:hover {
+    top: -10px;
+    transition: .5s all ease;
+    border-radius: 2.5%;
+    box-shadow: 2px 2px 20px 1px $color-shadow;
+  }
+}

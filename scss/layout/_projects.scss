@@ -1,0 +1,118 @@
+.desktop-view-more {
+  @include text(1.5em, $black);
+  display: block;
+  text-decoration: none;
+  text-align: right;
+  margin: 25px;
+}
+.mobile-view-more {
+  @include text(1.5em, $black);
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  margin: 25px;
+}
+.hidden-mobile {
+  
+  display: none;
+}
+
+.project-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 25px;
+  margin: 50px 25px;
+
+  & img {
+    width: 100%;
+    border-radius: 2.5%;
+  }
+  & a {
+    text-decoration: none;
+    color: $black;
+    display: block;
+    max-width: 250px;
+    width: auto;
+  }
+  & h3,
+  & p {
+    margin: 5px;
+  }
+}
+
+.proj-1 {
+  top: 0;
+  position: relative;
+  transition: .5s all ease;
+  margin-bottom: 25px;
+  &:hover {
+    top: -10px;
+    transition: .5s all ease;
+    border-radius: 2.5%;
+    box-shadow: 2px 2px 20px 1px $color-shadow;
+  }
+}
+
+.proj-2 {
+  top: 0;
+  position: relative;
+  transition: .5s all ease;
+  margin-bottom: 25px;
+  &:hover {
+    top: -10px;
+    transition: .5s all ease;
+    border-radius: 2.5%;
+    box-shadow: 2px 2px 20px 1px $color-shadow;
+  }
+}
+.proj-3 {
+  top: 0;
+  position: relative;
+  transition: .5s all ease;
+  margin-bottom: 25px;
+  &:hover {
+    top: -10px;
+    transition: .5s all ease;
+    border-radius: 2.5%;
+    box-shadow: 2px 2px 20px 1px $color-shadow;
+  }
+}
+.proj-4 {
+  top: 0;
+  display: none;
+  position: relative;
+  transition: .5s all ease;
+  &:hover {
+    top: -10px;
+    transition: .5s all ease;
+    border-radius: 2.5%;
+    box-shadow: 2px 2px 20px 1px $color-shadow;
+  }
+}
+.proj-5 {
+  top: 0;
+  display: none;
+  position: relative;
+  transition: .5s all ease;
+  &:hover {
+    top: -10px;
+    transition: .5s all ease;
+    border-radius: 2.5%;
+    box-shadow: 2px 2px 20px 1px $color-shadow;
+  }
+}
+
+
+.proj-6 {
+  top: 0;
+  display: none;
+  position: relative;
+  transition: .5s all ease;
+  &:hover {
+    top: -10px;
+    transition: .5s all ease;
+    border-radius: 2.5%;
+    box-shadow: 2px 2px 20px 1px $color-shadow;
+  }
+}

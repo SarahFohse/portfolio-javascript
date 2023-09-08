@@ -1,0 +1,78 @@
+/* tiny breakpoint */
+@media screen and (min-width: 310px) {
+  .project-content a {
+    max-width: 400px;
+    width: auto;
+  }
+}
+@media screen and (min-width: 576px) { 
+  .outer-container {
+    margin-left: 200px;
+  }
+  .menu-alt {
+    display: none;
+  }
+  .hidden-mobile {
+    display: block;
+  }
+  .hidden-desktop {
+    display: none;
+  }
+  .project-content a {
+    max-width: 450px;
+    width: auto;
+  }
+  
+}
+@media screen and (min-width: 768px) {
+  .project-content a {
+    max-width: 400px;
+    width: auto;
+  }
+  .about-content {
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: normal;
+  }
+  .about-text {
+  
+    width: 50%;
+  }
+  .img-content p {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .project-content a {
+    max-width: 350px;
+    width: auto;
+  }
+  .proj-4 {
+    display: block;
+  }
+  .info-content {
+    width: 40%;
+  }
+  .scs-content {
+    max-width: 750px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+}
+@media screen and (min-width: 1200px){
+  .project-content a {
+    max-width: 300px;
+    width: auto;
+  }
+  .proj-5,
+  .proj-6 {
+    display: block;
+  }
+}
+@media screen and (min-width: 1525px) and (max-width: 1924px) {
+  .project-content a {
+    max-width: 400px;
+    width: auto;
+  }
+}

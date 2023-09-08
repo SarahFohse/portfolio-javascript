@@ -1,0 +1,86 @@
+.menu-alt {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 10;
+}
+.menu-alt button {
+  font-size: 1.2em;
+  color: $white;
+  background-color: $grey;
+  border: none;
+  border-radius: 5%;
+  box-shadow: 2px 2px 10px 1px $color-shadow;
+  width: 57px;
+  height: 57px;
+  cursor: pointer;
+}
+
+
+.side-menu {
+  font-family: $stack-great;
+  height: 100vh;
+  position: fixed;
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 200px;
+  box-shadow: 10px 0px 28px $color-shadow;
+  z-index: 20;
+}
+
+.fa-xmark {
+  font-size: 1.4em;
+}
+
+@media (max-width: 575px) {
+  .side-menu {
+    left: -200px;
+    transition: left .4s ease-in-out;
+  }
+  
+  .side-menu-active {
+    left: 0;
+  }
+}
+
+
+.initials {
+  border-bottom: 2px solid $black;
+}
+.initials a {
+  @include text(6.25em, $black);
+  font-family: $stack-oswald;
+  text-decoration: none;
+  padding: 0 25px;
+}
+h1 {
+  margin: 20px;
+}
+.page-links {
+  list-style: none;
+  text-align: center;
+  margin-top: -100px;
+  & a {
+    @include text(1.5em, $black);
+    text-decoration: none;
+    &:hover {
+      text-decoration: line-through;
+    }
+  }
+  & li {
+    margin: 30px 0;
+  }
+}
+
+.socials {
+  margin-bottom: 60px;
+  & a {
+    @include text(1.5em, $black);
+    text-decoration: none ;
+    padding: 10px;
+  }
+}
