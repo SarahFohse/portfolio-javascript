@@ -41,6 +41,12 @@
   .img-content p {
     font-size: 1.8rem;
   }
+  
+}
+@media (max-width: 768px) {
+  .container-codepage .popup-image img {
+    width: 90%;
+  }
 }
 @media screen and (min-width: 992px) {
   .project-content a {

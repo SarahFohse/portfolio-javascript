@@ -1,0 +1,50 @@
+.container-codepage {
+  position: relative;
+  min-height: 100vh;
+}
+.container-codepage h1 {
+  font-size: 40px;
+  text-align: center;
+}
+.container-codepage .code-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+  justify-content: center;
+  padding: 10px;
+  
+}
+.container-codepage .code-container img {
+  height: 400px;
+  width: 350px;
+  cursor: pointer;
+  object-fit: cover;
+}
+.container-codepage .popup-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,.5);
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  display: none;
+}
+.container-codepage .popup-image span {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  font-size: 60px;
+  font-weight: bolder;
+  color: $white;
+  cursor: pointer;
+  z-index: 150;
+}
+.container-codepage .popup-image img {
+  height: 90vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 650px;
+}

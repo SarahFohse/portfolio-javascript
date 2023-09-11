@@ -52,6 +52,10 @@
   height: 200px;}
 #submit{
   width: 105px;
+  cursor: pointer;
+  &:hover {
+    background-color: $grey;
+  }
 }
 
 ///////style form validation
