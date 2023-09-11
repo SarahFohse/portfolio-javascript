@@ -48,7 +48,16 @@
     height: 400px;
     width: auto;
   }
-}
+  
+    .coming-soon {
+        overflow-x: hidden;
+    }
+  
+    .code-sample h2 {
+        text-align: center;
+    }
+  }
+
 @media (max-width: 576px) {
   .container-codepage .popup-image img {
     height: auto;
