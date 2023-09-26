@@ -6,8 +6,9 @@ const lastName = document.getElementById('lastname');
 const email = document.getElementById('email');
 
 document.getElementById("submit").addEventListener("click", function(event){
-  event.preventDefault()
+  event.preventDefault();
   validateInputs();
+  allSubmitted();
 });
 
 
@@ -74,3 +75,24 @@ const validateInputs = () => {
         setSuccess(email);
     }
 };
+
+
+const successful = document.getElementById('form-success');
+const submitted = document.querySelectorAll('.input-control');
+let validationPass = 0;
+
+const allSubmitted = () => {
+  for (let i = 0; i < submitted.length; i++) {
+    if(submitted[i].classList.contains('success')) {
+      validationPass++;
+    }
+  }
+
+  if (validationPass == 3) {
+    successful.classList.remove('success-hide');
+  } else {
+    successful.classList.add('success-hide');
+  }
+
+  validationPass = 0;
+}

@@ -10,11 +10,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/application.css">
-    <script src="https://kit.fontawesome.com/5cbcf5da8c.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <div class="menu-alt">
-      <button class="button"><i class="fa-solid fa-bars"></i></button>
+      <button class="button"><span class="icon-menu"></span></button>
     </div>
     <section id="side-menu-section" class="hidden">
       <div class="side-menu">
@@ -31,8 +30,8 @@
           </ul>
         </div>
         <div class="socials">
-          <a href="https://github.com/SarahFohse" target="_blank"><i class="fa-brands fa-github"></i></a>
-          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com/SarahFohse" target="_blank"><span class="icon-github"></span></a>
+          <a href="#"><span class="icon-linkedin2"></span></a>
         </div>
       </div>
     </section>
@@ -47,43 +46,51 @@
         <div class="code-container">  
           <div class="code-sample">
             <h2>JavaScript Pagination</h2>
-            <img src="../img/javascript-code-example.png">
-          </div>
-          <div class="code-sample">
-            <h2>Coming Soon</h2>
-            <div class="coming-soon">
-                <img src="../img/pexels-vie-studio-4439444.jpg">
+            <img src="../img/javascript-code-example.png" alt="Javascript Pagination Code">
+            <div class="hover-text">
+              <h3>JavaScript Pagination</h3>
+              <p>
+                After setting up variables, including one to say how many items there should be on the page. Next, I created a for-loop to determine the number of pages needed. I then set the first pagination link to be active and loop though the pagination links when the eventlistener detects a click-event. The active class is being removed from any of the others to prevent two page numbers being active. The last loop goes through the projects and makes sure the correct projects are applied.</p>
             </div>
           </div>
           <div class="code-sample">
-              <h2>Coming Soon</h2>
-              <div class="coming-soon">
-                  <img src="../img/pexels-vie-studio-4439444.jpg">
+            <h2>Mixin for Hover Descriptions</h2>
+              <img src="../img/mixin-sample.png" alt="Mixin Example Code">
+              <div class="hover-text">
+                <h3>Mixin Hover Descriptions</h3>
+                <p>This mixin is responsible for the hover effect you are currently viewing. As I have many projects and examples on my portfolio, I decided to create a mixin for the code which would otherwise be repeated multiple times over and cause unreadabilty.</p>
               </div>
           </div>
           <div class="code-sample">
               <h2>Coming Soon</h2>
               <div class="coming-soon">
-                  <img src="../img/pexels-vie-studio-4439444.jpg">
+                  <img src="../img/pexels-vie-studio-4439444.jpg" alt="coming soon">
+                  <div class="hover-text"></div>
               </div>
           </div>
           <div class="code-sample">
               <h2>Coming Soon</h2>
               <div class="coming-soon">
-                  <img src="../img/pexels-vie-studio-4439444.jpg">
+                  <img src="../img/pexels-vie-studio-4439444.jpg" alt="coming soon">
               </div>
           </div>
           <div class="code-sample">
               <h2>Coming Soon</h2>
               <div class="coming-soon">
-                  <img src="../img/pexels-vie-studio-4439444.jpg">
+                  <img src="../img/pexels-vie-studio-4439444.jpg" alt="coming soon">
+              </div>
+          </div>
+          <div class="code-sample">
+              <h2>Coming Soon</h2>
+              <div class="coming-soon">
+                  <img src="../img/pexels-vie-studio-4439444.jpg" alt="coming soon">
               </div>
           </div>
        </div>
 
        <div class="popup-image">
         <span>&times;</span>
-        <img src="../img/javascript-code-example.png">
+        <img src="../img/javascript-code-example.png" alt="Code Example">
         </div>
       </main>
 
@@ -93,6 +100,7 @@
 
     </div>
     <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/pop-up-image.js"></script>
     <script src="../js/main.js"></script>
   </body>
 </html>

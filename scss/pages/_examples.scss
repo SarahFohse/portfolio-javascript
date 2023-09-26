@@ -51,3 +51,21 @@
   transform: translate(-50%, -50%);
   width: 650px;
 }
+.code-sample {
+  position: relative;
+
+
+  
+}
+.hover-text {
+  display: none;
+}
+.code-sample:hover .hover-text {
+  @include hover-description;
+  cursor: pointer;
+
+  p {
+    margin: 0 20px;
+  }
+}
+

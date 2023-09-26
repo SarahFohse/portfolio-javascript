@@ -15,7 +15,18 @@
   }
   p {
     font-size: 1.2em;
-    padding: 15px 0;}
+    padding: 15px 0;
+  }
+  a {
+    color: $grey;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: line-through;
+      color: $black;
+    }
+  }
+
 }
 .form-content {
   display: grid;
@@ -65,4 +76,11 @@
   font-size: .9em;
   height: 13px;
   text-align: center;
+}
+.success-hide {
+  display: none;
+}
+.success-message {
+  text-align: center;
+  color: lime;
 }

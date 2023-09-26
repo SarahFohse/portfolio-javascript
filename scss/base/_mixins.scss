@@ -1,4 +1,17 @@
-
+@mixin hover-description {
+  position: absolute;
+  display: flex;
+  top: 0;
+  flex-wrap: wrap;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  background: $black;
+  height: 100%;
+  color: $white;
+  gap: 30px;
+  opacity: .95;
+}
 
 
 

@@ -11,11 +11,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
     <!-- <link rel="stylesheet" href="css/style.css"> -->
     <link rel="stylesheet" href="css/application.css">
-    <script src="https://kit.fontawesome.com/5cbcf5da8c.js" crossorigin="anonymous"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
   </head>
   <body>
   <div class="menu-alt">
-    <button class="button"><i class="fa-solid fa-bars"></i></button>
+    <button class="button"><span class="icon-menu"></span></button>
   </div>
   <section id="side-menu-section" class="hidden">
     <div class="side-menu">
@@ -32,8 +35,8 @@
         </ul>
       </div>
       <div class="socials">
-        <a href="https://github.com/SarahFohse" target="_blank"><i class="fa-brands fa-github"></i></a>
-        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://github.com/SarahFohse" target="_blank"><span class="icon-github"></span></a>
+        <a href="#"><span class="icon-linkedin2"></span></a>
       </div>
     </div>
   </section>
@@ -78,67 +81,71 @@
             <span>r</span>
           </p>
           <div class="scroll-down">
-            <a href="index.html#project"><p>Scroll Down<br><i class="fa-solid fa-chevron-down"></i></p></a>
+            <a href="index.html#project"><p>Scroll Down<br><span class="icon-circle-down"></span></p></a>
           </div>
         </div>
       </section>
       <section id="project" class="container">
         <div class="hidden-mobile">
-          <a href="pages/portfolio.html" class="desktop-view-more">View More Projects <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="pages/portfolio.html" class="desktop-view-more">View More Projects <span class="icon-arrow-right2"></span></a>
         </div>
         <div class="project-content">
           <div class="proj-1">
-            <a href="https://sarah-fohse.netmatters-scs.co.uk/"><img src="img/portfolio.gif" class="portfolio">
-            <h3>Portfolio [HTML | CSS/Sass | JavaScript]</h3>
-            <p>View Project <i class="fa-solid fa-arrow-right"></i>
+            <a href="https://netmatters.sarah-fohse.netmatters-scs.co.uk/"><img src="img/netmatter-still.png" alt="netmatters homepage">
+            <h3>Netmatters Homepage [HTML | CSS/Sass | JavaScript]</h3>
+            <p>View Project <span class="icon-arrow-right2"></span>
             </p>
+            <div class="hover-text">
+              <h3>Netmatters Website Rebuilt</h3>
+              <p>This projects is a rebuilt of the Netmatters Homepage. It was set as an assessment for the SCS Scheme.</p>
+            </div>
             </a>
           </div>
           <div class="proj-2">
-            <a href="#"><img src="img/pexels-huebert-world-3213977.jpg">
+            <a href="#"><img src="img/pexels-huebert-world-3213977.jpg" alt="coming soon">
             <h3>Project 2</h3>
-            <p>View Project <i class="fa-solid fa-arrow-right"></i>
+            <p>View Project <span class="icon-arrow-right2"></span>
             </p>
             </a>
           </div>
           <div class="proj-3">
-            <a href="#"><img src="img/pexels-huebert-world-3213977.jpg">
+            <a href="#"><img src="img/pexels-huebert-world-3213977.jpg" alt="coming soon">
             <h3>Project 3</h3>
-            <p>View Project <i class="fa-solid fa-arrow-right"></i>
+            <p>View Project <span class="icon-arrow-right2"></span>
             </p>
             </a>
           </div>
           <div class="proj-4">
-            <a href="#"><img src="img/pexels-huebert-world-3213977.jpg">
+            <a href="#"><img src="img/pexels-huebert-world-3213977.jpg" alt="coming soon">
             <h3>Project 4</h3>
-            <p>View Project <i class="fa-solid fa-arrow-right"></i>
+            <p>View Project <span class="icon-arrow-right2"></span>
             </p>
             </a>
           </div>
           <div class="proj-5">
-            <a href="#"><img src="img/pexels-huebert-world-3213977.jpg">
+            <a href="#"><img src="img/pexels-huebert-world-3213977.jpg" alt="coming soon">
             <h3>Project 5</h3>
-            <p>View Project <i class="fa-solid fa-arrow-right"></i>
+            <p>View Project <span class="icon-arrow-right2"></span>
             </p>
             </a>
           </div>
           <div class="proj-6">
-            <a href="#"><img src="img/pexels-huebert-world-3213977.jpg">
+            <a href="#"><img src="img/pexels-huebert-world-3213977.jpg" alt="coming soon">
             <h3>Project 6</h3>
-            <p>View Project <i class="fa-solid fa-arrow-right"></i>
+            <p>View Project <span class="icon-arrow-right2"></span>
             </p>
             </a>
           </div>
         </div>
         <div class="hidden-desktop">
-          <a href="pages/portfolio.html" class="mobile-view-more">View More Projects <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="pages/portfolio.html" class="mobile-view-more">View More Projects <span class="icon-arrow-right2"></span></a>
         </div>
       </section>
       <section class="container" id="contact-form">
         <div class="info-content">
           <h4>Get In Touch</h4>
           <p>For professional enquiries beyond the scope of the form, please don't hesitate to contact me via email.</p>
-          <p>Sarah.Fohse@netmatters-scs.com</p>
+          <p><a href="mailto:sarahfohse@gmail.com?subject=Enquiry">sarahfohse@gmail.com</a></p>
           <p>Please understand that depending on your enquiry I will  get back to you within two working days (Mo-Fr).</p>
         </div>
         <div class="form">
@@ -168,10 +175,11 @@
               <div class="error"></div>
             </div>
           </form>
+          <p id="form-success" class="success-message success-hide">The form has been successfully submitted.</p>
         </div>
       </section>
       <div class="back-top">
-        <a href="#"><i class="fa-solid fa-chevron-up"></i><br>Back To Top</a>
+        <a href="#"><span class="icon-circle-up"></span><br>Back To Top</a>
       </div>
     </div>
     <script src="js/jquery-3.7.1.min.js"></script>

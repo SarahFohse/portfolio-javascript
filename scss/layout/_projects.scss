@@ -51,11 +51,24 @@
   position: relative;
   transition: .5s all ease;
   margin-bottom: 25px;
+
+  .hover-text {
+    display: none;
+  }
   &:hover {
     top: -10px;
     transition: .5s all ease;
     border-radius: 2.5%;
     box-shadow: 2px 2px 20px 1px $color-shadow;
+  }
+}
+
+.proj-1:hover .hover-text{
+  @include hover-description;
+  border-radius: 2.5%;
+
+  p {
+    margin: 0 50px;
   }
 }
 
