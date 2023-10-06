@@ -77,11 +77,23 @@
   position: relative;
   transition: .5s all ease;
   margin-bottom: 25px;
+
+  .hover-text {
+    display: none;
+  }
   &:hover {
     top: -10px;
     transition: .5s all ease;
     border-radius: 2.5%;
     box-shadow: 2px 2px 20px 1px $color-shadow;
+  }
+}
+.proj-2:hover .hover-text{
+  @include hover-description;
+  border-radius: 2.5%;
+
+  p {
+    margin: 0 50px;
   }
 }
 .proj-3 {
@@ -89,44 +101,6 @@
   position: relative;
   transition: .5s all ease;
   margin-bottom: 25px;
-  &:hover {
-    top: -10px;
-    transition: .5s all ease;
-    border-radius: 2.5%;
-    box-shadow: 2px 2px 20px 1px $color-shadow;
-  }
-}
-.proj-4 {
-  top: 0;
-  display: none;
-  position: relative;
-  transition: .5s all ease;
-  &:hover {
-    top: -10px;
-    transition: .5s all ease;
-    border-radius: 2.5%;
-    box-shadow: 2px 2px 20px 1px $color-shadow;
-  }
-}
-.proj-5 {
-  top: 0;
-  display: none;
-  position: relative;
-  transition: .5s all ease;
-  &:hover {
-    top: -10px;
-    transition: .5s all ease;
-    border-radius: 2.5%;
-    box-shadow: 2px 2px 20px 1px $color-shadow;
-  }
-}
-
-
-.proj-6 {
-  top: 0;
-  display: none;
-  position: relative;
-  transition: .5s all ease;
   &:hover {
     top: -10px;
     transition: .5s all ease;
