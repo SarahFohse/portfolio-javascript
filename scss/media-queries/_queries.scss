@@ -46,7 +46,7 @@
 @media (max-width: 400px) {
   .container-codepage .code-container img {
     height: 400px;
-    width: 100%;
+    width: 90vw;
   }
   
     .coming-soon {
@@ -68,6 +68,12 @@
   .container-codepage .popup-image img {
     width: 90%;
   }
+  
+}
+@media (min-width: 768px) {
+  .form {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -83,6 +89,9 @@
     margin-left: auto;
     margin-right: auto;
   }
+  .form {
+    width: 365px;
+  }
 }
 @media (min-width: 1000px) and (max-width: 1024px) {
   .project-content > div {
@@ -97,5 +106,8 @@
   .proj-5,
   .proj-6 {
     display: block;
+  }
+  .form {
+    width: 500px;
   }
 }
