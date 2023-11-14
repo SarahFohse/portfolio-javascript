@@ -17,6 +17,8 @@
     <link rel="manifest" href="favicon/site.webmanifest">
   </head>
   <body>
+  <?php ob_start();?>
+  <?php include("inc/validate.php"); ?>
   <div class="menu-alt">
     <button class="button"><span class="icon-menu"></span></button>
   </div>
@@ -132,21 +134,21 @@
           <p>Please understand that depending on your enquiry I will  get back to you within two working days (Mo-Fr).</p>
         </div>
         <div class="form">
-          <form class="form-content">
+          <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST" class="form-content" id= "form">
             <div class="input-control">
-              <input type="text" id="firstname" placeholder="First Name*">
+              <input type="text" name="firstname" id="firstname" placeholder="First Name*">
               <div class="error"></div>
             </div>
             <div class="input-control">
-              <input type="text" id="lastname" placeholder="Last Name*">
+              <input type="text" name="lastname" id="lastname" placeholder="Last Name*">
               <div class="error"></div>
             </div>
             <div class="input-control" id="email-container">
-              <input type="email" id="email" placeholder="Email Address*">
+              <input type="email" name="email" id="email" placeholder="Email Address*">
               <div class="error"></div>
             </div>
             <div class="input-control" id="subject-container">
-              <input type="text" id="subject" placeholder="Subject">
+              <input type="text" id="subject" name="subject" placeholder="Subject">
               <div class="error"></div>
             </div>
             <div class="input-control" id="message-container">
@@ -154,7 +156,7 @@
               <div class="error"></div>
             </div>
             <div class="input-control">
-              <input type="submit" id="submit">
+              <input type="submit" id="submit" name="submit">
               <div class="error"></div>
             </div>
           </form>
@@ -165,6 +167,7 @@
         <a href="#"><span class="icon-circle-up"></span><br>Back To Top</a>
       </div>
     </div>
+    <?php include("inc/connection.php"); ?>
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/form-validation.js"></script>
 
