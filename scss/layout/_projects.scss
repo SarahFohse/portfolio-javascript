@@ -108,3 +108,11 @@
     box-shadow: 2px 2px 20px 1px $color-shadow;
   }
 }
+.proj-3:hover .hover-text{
+  @include hover-description;
+  border-radius: 2.5%;
+
+  p {
+    margin: 0 50px;
+  }
+}

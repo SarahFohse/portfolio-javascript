@@ -14,8 +14,6 @@ $( "#form" ).on( "submit", function( event ) {
   validateInputs();
   allSubmitted();
 
-  console.log(validationPass);
-
   if (validationPass == 3) {
     validationPass = 0;
     return true;

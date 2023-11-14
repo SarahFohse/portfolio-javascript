@@ -1,3 +1,5 @@
+<?php ob_start();?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -17,7 +19,6 @@
     <link rel="manifest" href="favicon/site.webmanifest">
   </head>
   <body>
-  <?php ob_start();?>
   <?php include("inc/validate.php"); ?>
   <div class="menu-alt">
     <button class="button"><span class="icon-menu"></span></button>
@@ -25,15 +26,15 @@
   <section id="side-menu-section" class="hidden">
     <div class="side-menu">
       <div class="initials">
-        <a href="index.html">SF</a>
+        <a href="index.php">SF</a>
       </div>
       <div>
         <ul class="page-links">
           <li><a href="pages/about.html">About Me</a></li>
-          <li><a href="index.html#project">My Portfolio</a></li>
+          <li><a href="index.php#project">My Portfolio</a></li>
           <li><a href="pages/examples.html">Coding Examples</a></li>
           <li><a href="pages/scs.html">SCS Scheme</a></li>
-          <li><a href="index.html#contact-form" class="contact-me">Contact Me</a></li>
+          <li><a href="index.php#contact-form" class="contact-me">Contact Me</a></li>
         </ul>
       </div>
       <div class="socials">
@@ -83,7 +84,7 @@
             <span>r</span>
           </p>
           <div class="scroll-down">
-            <a href="index.html#project"><p>Scroll Down<br><span class="icon-circle-down"></span></p></a>
+            <a href="index.php#project"><p>Scroll Down<br><span class="icon-circle-down"></span></p></a>
           </div>
         </div>
       </section>
@@ -115,9 +116,14 @@
             </a>
           </div>
           <div class="proj-3">
-            <a href="#"><img src="img/pexels-huebert-world-3213977.jpg" alt="coming soon">
-            <h3>Project 3</h3>
-            <p>COMING SOON</p>
+            <a href="https://netmatters.sarah-fohse.netmatters-scs.co.uk/contact.php"><img src="img/contact-still.jpg" alt="Netmatters Contact Page">
+            <h3>Netmatters Contact Page [HTML | CSS/Sass | JavaScript | PHP]</h3>
+            <p>View Project <span class="icon-arrow-right2"></span>
+            </p>
+            <div class="hover-text">
+              <h3>Netmatters Contact Page</h3>
+              <p>This project focused on rebuilding the Netmatters Contact Page and server-side validation with PHP with successful entries being placed in a database.</p>
+            </div>
             </a>
           </div>
          
