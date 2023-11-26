@@ -60,7 +60,7 @@
 .hover-text {
   display: none;
 }
-.code-sample:hover .hover-text {
+.code-sample .hover-text.active-info {
   @include hover-description;
   cursor: pointer;
 
@@ -69,3 +69,15 @@
   }
 }
 
+.info-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 10;
+  background-color: rgb(109, 109, 109);
+  color: $white;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+}

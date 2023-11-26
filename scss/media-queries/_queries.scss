@@ -1,6 +1,6 @@
 /* tiny breakpoint */
 @media screen and (min-width: 310px) {
-  .project-content a {
+  .proj-1, .proj-2, .proj-3 {
     max-width: 400px;
     width: auto;
   }
@@ -18,14 +18,14 @@
   .hidden-desktop {
     display: none;
   }
-  .project-content a {
-    max-width: 450px;
+  .proj-1, .proj-2, .proj-3 {
+    max-width: 400px;
     width: auto;
   }
   
 }
 @media screen and (min-width: 768px) {
-  .project-content a {
+  .proj-1, .proj-2, .proj-3  {
     max-width: 400px;
     width: auto;
   }
@@ -99,7 +99,7 @@
   }
 }
 @media screen and (min-width: 1200px){
-  .project-content a {
+  .proj-1, .proj-2, .proj-3 {
     max-width: 370px;
     width: auto;
   }

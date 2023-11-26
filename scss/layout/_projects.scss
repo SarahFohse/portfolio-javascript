@@ -4,6 +4,7 @@
   text-decoration: none;
   text-align: right;
   margin: 25px;
+  display: none;
 }
 .mobile-view-more {
   @include text(1.5em, $black);
@@ -11,6 +12,7 @@
   text-decoration: none;
   text-align: center;
   margin: 25px;
+  display: none;
 }
 .hidden-mobile {
   
@@ -26,7 +28,8 @@
   max-width: 1500px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 80px;;
+  margin-bottom: 80px;
+  margin-top: 80px;
 
   & img {
     width: 100%;
@@ -35,26 +38,30 @@
   }
   & a {
     text-decoration: none;
-    color: $black;
-    display: block;
-    max-width: 250px;
-    width: auto;
+    color: $white;
+    background-color: rgb(59, 59, 59);
+    position: relative;
+    padding: 10px 10px 10px 10px;
+    border-radius: 3px;
+    top: 10px;
+    
   }
   & h3,
   & p {
     margin: 5px;
   }
 }
-
+.proj-1, .proj-2, .proj-3 {
+  display: block;
+  max-width: 250px;
+  width: auto;
+}
 .proj-1 {
   top: 0;
   position: relative;
   transition: .5s all ease;
   margin-bottom: 25px;
 
-  .hover-text {
-    display: none;
-  }
   &:hover {
     top: -10px;
     transition: .5s all ease;
@@ -63,14 +70,14 @@
   }
 }
 
-.proj-1:hover .hover-text{
-  @include hover-description;
-  border-radius: 2.5%;
+// .proj-1:hover .hover-text{
+//   @include hover-description;
+//   border-radius: 2.5%;
 
-  p {
-    margin: 0 50px;
-  }
-}
+//   p {
+//     margin: 0 50px;
+//   }
+// }
 
 .proj-2 {
   top: 0;
@@ -88,14 +95,14 @@
     box-shadow: 2px 2px 20px 1px $color-shadow;
   }
 }
-.proj-2:hover .hover-text{
-  @include hover-description;
-  border-radius: 2.5%;
+// .proj-2:hover .hover-text{
+//   @include hover-description;
+//   border-radius: 2.5%;
 
-  p {
-    margin: 0 50px;
-  }
-}
+//   p {
+//     margin: 0 50px;
+//   }
+// }
 .proj-3 {
   top: 0;
   position: relative;
@@ -108,11 +115,11 @@
     box-shadow: 2px 2px 20px 1px $color-shadow;
   }
 }
-.proj-3:hover .hover-text{
-  @include hover-description;
-  border-radius: 2.5%;
+// .proj-3:hover .hover-text{
+//   @include hover-description;
+//   border-radius: 2.5%;
 
-  p {
-    margin: 0 50px;
-  }
-}
+//   p {
+//     margin: 0 50px;
+//   }
+// }

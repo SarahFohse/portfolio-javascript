@@ -1,4 +1,11 @@
-<?php ob_start();?>
+<?php ob_start();
+
+
+require_once realpath(__DIR__ . "/vendor/autoload.php");
+// use Dotenv\Dotenv;
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -94,37 +101,30 @@
         </div>
         <div class="project-content">
           <div class="proj-1">
-            <a href="https://netmatters.sarah-fohse.netmatters-scs.co.uk/" target="_blank"><img src="img/netmatter-still.jpg" alt="netmatters homepage">
+            <a href="https://netmatters.sarah-fohse.netmatters-scs.co.uk/" target="_blank">View
+            </a>
+            <img src="img/netmatter-still.jpg" alt="netmatters homepage">
             <h3>Netmatters Homepage [HTML | CSS/Sass | JavaScript]</h3>
-            <p>View Project <span class="icon-arrow-right2"></span>
-            </p>
-            <div class="hover-text">
-              <h3>Netmatters Website Rebuild</h3>
+            <div class="info-text">
               <p>This project is a rebuild of the Netmatters Homepage. It was set as an assessment for the SCS Scheme.</p>
             </div>
-            </a>
           </div>
           <div class="proj-2">
-            <a href="http://js-array.sarah-fohse.netmatters-scs.co.uk/" target="_blank"><img src="img/js-array.png" alt="JavaScript Array Project">
+            <a href="http://js-array.sarah-fohse.netmatters-scs.co.uk/" target="_blank">View</a>
+            <img src="img/js-array.png" alt="JavaScript Array Project">
             <h3>JavaScript Array [HTML | CSS/Sass | JavaScript]</h3>
-            <p>View Project <span class="icon-arrow-right2"></span>
-            </p>
-            <div class="hover-text">
-              <h3>JavaScript Array</h3>
+            <div class="info-text">
               <p>This project is using JavaScript to generate images and elements dynamically on the page. The images are being displayed as a carousel and the users are put into an array upon entering their email.</p>
             </div>
-            </a>
           </div>
           <div class="proj-3">
-            <a href="https://netmatters.sarah-fohse.netmatters-scs.co.uk/contact.php"><img src="img/contact-still.jpg" alt="Netmatters Contact Page">
+            <a href="https://netmatters.sarah-fohse.netmatters-scs.co.uk/contact.php" target="_blank">View</a>
+            <img src="img/contact-still.jpg" alt="Netmatters Contact Page">
             <h3>Netmatters Contact Page [HTML | CSS/Sass | JavaScript | PHP]</h3>
-            <p>View Project <span class="icon-arrow-right2"></span>
-            </p>
-            <div class="hover-text">
-              <h3>Netmatters Contact Page</h3>
+            <div class="info-text">
               <p>This project focused on rebuilding the Netmatters Contact Page and server-side validation with PHP with successful entries being placed in a database.</p>
             </div>
-            </a>
+            
           </div>
          
         </div>
