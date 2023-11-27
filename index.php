@@ -100,28 +100,31 @@ $dotenv->load();
           <a href="pages/portfolio.html" class="desktop-view-more">View More Projects <span class="icon-arrow-right2"></span></a>
         </div>
         <div class="project-content">
-          <div class="proj-1">
+          <div class="proj-1 together">
             <a href="https://netmatters.sarah-fohse.netmatters-scs.co.uk/" target="_blank">View
             </a>
+            <button class="info-button">Info</button>
             <img src="img/netmatter-still.jpg" alt="netmatters homepage">
             <h3>Netmatters Homepage [HTML | CSS/Sass | JavaScript]</h3>
-            <div class="info-text">
+            <div class="hover-text">
               <p>This project is a rebuild of the Netmatters Homepage. It was set as an assessment for the SCS Scheme.</p>
             </div>
           </div>
-          <div class="proj-2">
+          <div class="proj-2 together">
             <a href="http://js-array.sarah-fohse.netmatters-scs.co.uk/" target="_blank">View</a>
+            <button class="info-button">Info</button>
             <img src="img/js-array.png" alt="JavaScript Array Project">
             <h3>JavaScript Array [HTML | CSS/Sass | JavaScript]</h3>
-            <div class="info-text">
+            <div class="hover-text">
               <p>This project is using JavaScript to generate images and elements dynamically on the page. The images are being displayed as a carousel and the users are put into an array upon entering their email.</p>
             </div>
           </div>
-          <div class="proj-3">
+          <div class="proj-3 together">
             <a href="https://netmatters.sarah-fohse.netmatters-scs.co.uk/contact.php" target="_blank">View</a>
+            <button class="info-button">Info</button>
             <img src="img/contact-still.jpg" alt="Netmatters Contact Page">
             <h3>Netmatters Contact Page [HTML | CSS/Sass | JavaScript | PHP]</h3>
-            <div class="info-text">
+            <div class="hover-text">
               <p>This project focused on rebuilding the Netmatters Contact Page and server-side validation with PHP with successful entries being placed in a database.</p>
             </div>
             
@@ -176,7 +179,7 @@ $dotenv->load();
     <?php include("inc/connection.php"); ?>
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/form-validation.js"></script>
-
+    <script src="js/info-text.js"></script>
     <script src="js/main.js"></script>
     
     

@@ -65,7 +65,7 @@
   &:hover {
     top: -10px;
     transition: .5s all ease;
-    border-radius: 2.5%;
+    border-radius: 3px;
     box-shadow: 2px 2px 20px 1px $color-shadow;
   }
 }
@@ -91,7 +91,7 @@
   &:hover {
     top: -10px;
     transition: .5s all ease;
-    border-radius: 2.5%;
+    border-radius: 3px;
     box-shadow: 2px 2px 20px 1px $color-shadow;
   }
 }
@@ -111,8 +111,16 @@
   &:hover {
     top: -10px;
     transition: .5s all ease;
-    border-radius: 2.5%;
+    border-radius: 3px;
     box-shadow: 2px 2px 20px 1px $color-shadow;
+  }
+}
+.together .hover-text.active-info {
+  @include hover-description;
+  cursor: pointer;
+
+  p {
+    margin: 0 20px;
   }
 }
 // .proj-3:hover .hover-text{
